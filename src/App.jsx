@@ -2,10 +2,10 @@ import { useRef, useState } from "react";
 
 import "./App.css";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import CarModel from "./components/car.model";
+import CarModel from "./utility/3d Model/car.model";
 import * as THREE from "three";
 import UserIcon from "./assets/icons/user.icon";
-import Aside, { CameraRig } from "./components/aside/aside";
+import Aside, { CameraRig } from "./components/public/aside/aside";
 import { AppRouter } from "./router/router";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -16,9 +16,9 @@ function App() {
     <>
       <div className="App">
         <Router>
-          <div className="[grid-area:aside] flex">
+          <aside className="[grid-area:aside] flex">
             <Aside setPosition={setPosition} />
-          </div>
+          </aside>
 
           <div className="[grid-area:main] flex overflow-hidden">
             <AppRouter />

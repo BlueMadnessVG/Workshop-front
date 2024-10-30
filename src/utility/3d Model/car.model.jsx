@@ -10,7 +10,7 @@ import {
 } from "@react-three/drei";
 import { Suspense, useRef } from "react";
 
-import "../App.css";
+import "../../App.css";
 
 import Model from "./Model";
 import { useFrame } from "@react-three/fiber";
